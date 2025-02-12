@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div id="grayUi" class="hidden fixed top-0 left-0  w-full h-full bg-[gray] opacity-[0.6]"></div>
+    <header class=" py-3.5  bg-[#1E2939]">
+        <div class="w-[80%] m-auto flex items-center justify-between">
+            <div>
+                <h1 class="text-white text-3xl font-bold">Alis Veris Sayti</h1>
+            </div>
+            <div>
+                <button id="basket"><i class="text-3xl text-white fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div id="modal" class="fixed top-[-50%] duration-500 gap-2 flex flex-col items-center p-2 justify-start transform translate-x-[-50%] translate-y-[-50%] left-[50%]  w-[700px] h-max bg-white">
+                <div class="p-3 w-full text-start">
+                    <button id="close"><i class="fa-solid fa-x"></i></button>
+                </div>
+                <div id="area" class="w-full flex flex-col gap-5">
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex">
+        <div class="w-[15%] h-auto bg-[#444] text-white">
+            <ul class="flex flex-col items-center gap-2.5 p-2">
+                <li onclick="filter('')" class="w-full py-2 px-3 bg-[#555] rounded-[8px]">Butun Mehullar</li>
+                <li onclick="filter('tech')" class="w-full py-2 px-3 bg-[#555] rounded-[8px]">Texnologiya</li>
+                <li onclick="filter('food')" class="w-full py-2 px-3 bg-[#555] rounded-[8px]">Qida</li>
+                <li onclick="filter('furniture')" class="w-full py-2 px-3 bg-[#555] rounded-[8px]">Mebel</li>
+                <li onclick="filter('clothing')" class="w-full py-2 px-3 bg-[#555] rounded-[8px]">Geyim</li>
+            </ul>
+        </div>
+        <div id="allProduct" class="w-[80%] grid grid-cols-1 lg:grid-cols-4 p-3.5">
+            
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
